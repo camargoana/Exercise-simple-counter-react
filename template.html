@@ -10,7 +10,39 @@
     </head>
     <body>
         <div id="app"></div>
-
+        <div class="text-center py-2">
+            <div class="btn btn-success" id="btn-status" style="width: 200px;">
+                RUNNING
+            </div>
+        </div>
+        <div class="text-center py-2">
+            <select class="form-select" id="selectId" disabled
+                style="width: 200px; display: inline;">
+                <option value="1">SIMPLE COUNTER</option>
+                <option value="2">COUNTDOWN</option>
+                <option value="3">ALERT COUNTER</option>
+            </select>
+        </div>
+        <div class="text-center py-2">
+            <input class="form-control text-center" disabled type="text" id="valueId" 
+                value="0" style="width: 200px; display: inline;" maxlength="4" />
+        </div>
+        <div class="text-center py-2">
+            <button class="btn btn-primary" id="btn-stop" style="width: 200px;">
+                STOP
+            </button>
+        </div>
+        <div class="text-center py-2">
+            <button class="btn btn-primary" id="btn-reset" style="width: 200px;">
+                RESET
+            </button>
+        </div>
+        <div class="text-center py-2">
+            <button class="btn btn-primary" id="btn-resume" style="width: 200px;" disabled>
+                RESUME
+            </button>
+        </div>
+        
         <!-- Many of bootstrap components require the use of JavaScript to function -->
         <!-- Popper and BootStrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
